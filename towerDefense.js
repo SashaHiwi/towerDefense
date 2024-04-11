@@ -17,11 +17,11 @@ lifes = 3,
 zan = [],
 xpFull = 15,
 xp = xpFull,
-speed = 0,
-speedGanCat = 999,
+speed = 15,
+speedGanCat = 500,
 speedGanVi = 1500,
 speedGanNi = 5000
-bal = 500
+bal = 9999
 balance.innerText = `Баланс: ${bal}`
 
 let e52 = but[52].getBoundingClientRect(),
