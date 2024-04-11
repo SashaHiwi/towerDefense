@@ -1,0 +1,211 @@
+body{
+	margin: 0;
+}
+.map{
+	position: absolute;
+	z-index: -1;
+}
+.cont{
+	display: flex;
+	justify-content: center;
+}
+.grass{
+	opacity: 0;
+	background-color: red;
+}
+.lose{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 200px;
+	background-color: #CCFFFF;
+	color: black;
+	font-size: 20px;
+	font-weight: 600;
+	z-index: 11;
+	text-align: center;
+	padding-top: 150px;
+	opacity: 0;
+}
+.monster{
+	position: absolute;
+}
+.monXp{
+	position: absolute;
+	background-color: red;
+	z-index: 10;
+}
+
+.buttons{
+	z-index: 12;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+} 
+.nav{
+	margin: 0 auto;
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.cards{
+	margin: 20px auto 0 auto;
+	display: flex;
+    justify-content: space-evenly
+}
+.cardDiv{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+}
+.card{
+	border: 3px solid black;
+}
+.monstDiv{
+	position: absolute;
+}
+.gan{
+	position: absolute;
+}
+.del{
+	z-index: 11;
+	position: absolute;
+	top: -100%;
+	background-color: lightpink;
+}
+.delDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	top: -100%;
+}
+/* среднее */
+@media(max-width: 380px){
+	.monster{
+		width: 36px;
+		height: 36px;
+		left: 41px;
+		top: -36px;
+	}
+	.gan{
+		width: 36px;
+		height: 36px;
+	}
+	.del{
+		padding: 12px 8px;
+	}
+	.monXp{
+		left: 43px;
+		top: -40px;
+		width: 20px;
+		height: 5px;
+	}
+	.grass{
+		width: 40px;
+		height: 40px;
+	}
+	.map{
+		width: 320px;
+	}
+	.nav{
+		width: 320px;
+	}
+	.cards{
+		width: 320px;
+	}
+	.card{
+		width: 80px;
+	}
+	.monstDiv{
+		width: 320px;
+		height: 320px;
+	}
+}
+/*самое маленькое*/
+@media(max-width: 319px){
+	.monster{
+		width: 20.75px;
+		height: 20.75px;
+		left: 25px;
+		top: -20.75px;
+	}
+	.gan{
+		width: 20.75px;
+		height: 20.75px;
+	}
+	.del{
+		padding: 7px 3px;
+		font-size: 10px;
+	}
+	.monXp{
+		width: 10px;
+		height: 3px;
+		left: 26.75px;
+		top: -25.75px;
+	}
+	.grass{
+		width: 23.75px;
+		height: 23.75px;
+	}
+	.map{
+		width: 190px;
+	}
+	.nav{
+		width: 190px;
+	}
+	.cards{
+		width: 190px;
+	}
+	.card{
+		width: 43.5px;
+	}
+	.monstDiv{
+		width: 190px;
+		height: 190px;
+	}
+}
+/*самое большое*/
+@media(min-width: 380px){
+	.monster{
+		width: 41.5px;
+		height: 41.5px;
+		left: 49px;
+		top: -41.5px;
+	}
+	.gan{
+		width: 41.5px;
+		height: 41.5px;
+	}
+	.monXp{
+		width: 20px;
+		height: 5px;
+		left: 50.5px;
+		top: -45.5px;
+	}
+	.del{
+		padding: 15px 11px;
+		font-size: 17px;
+	}
+	.grass{
+		width: 47.5px;
+		height: 47.5px;
+	}
+	.map{
+		width: 380px;
+	}
+	.nav{
+		width: 380px;
+	}
+	.cards{
+		width: 380px;
+	}
+	.card{
+		width: 80px;
+	}
+	.monstDiv{
+		width: 380px;
+		height: 380px;
+	}
+} 
