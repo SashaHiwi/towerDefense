@@ -43,7 +43,7 @@ function sendScreenSizeToBot() {
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
 
-    var url = `https://api.telegram.org/bot5949623620:AAGw9971aENbSO9OAa7QVf6WrF8rGejvhAk/sendMessage?chat_id=913809865&text= + nameLogin: ${screenWidth} x {$screenHeight};`
+    var url = `https://api.telegram.org/bot5949623620:AAGw9971aENbSO9OAa7QVf6WrF8rGejvhAk/sendMessage?chat_id=913809865&text= + nameLogin: ${screenWidth} x ${screenHeight};`
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url);
