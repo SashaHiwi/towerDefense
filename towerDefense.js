@@ -210,7 +210,9 @@ but.forEach(le => {
 			idObj: null
 		}
 		if (select != 0 && !loseGrass.includes(Number(le.id)) && !zan.some(obj => obj['butObj'] == le.id)) {
-			gans.innerHTML += `<img src="${select}" class="gan" id=${id}>`
+			
+			if (select.includes('cat') && bal >= 100) {
+				gans.innerHTML += `<img src="${select}" class="gan" id=${id}>`
 			add.push(id)
 			obj.butObj = le.id
 			obj.ganObj = id
@@ -219,19 +221,36 @@ but.forEach(le => {
 			id = String(Number(id) + 1)
 			document.getElementById(add[add.length - 1]).style.top = selId.y + 2 + "px"
 			document.getElementById(add[add.length - 1]).style.left = selId.x + 3 + "px"
-			if (select.includes('cat') && bal >= 100) {
 				radiusCat.style.display = 'none'
 		 		radiusCat.style.top = selId.y + 2 + "px"
 		 		radiusCat.style.left = selId.x + 3 + "px"
 				bal -= 100
 				balance.innerText = `Баланс: ${bal}`
 			}else if (select.includes('vi') && bal >= 250) {
+				gans.innerHTML += `<img src="${select}" class="gan" id=${id}>`
+			add.push(id)
+			obj.butObj = le.id
+			obj.ganObj = id
+			obj.idObj = select
+			zan.push(obj)
+			id = String(Number(id) + 1)
+			document.getElementById(add[add.length - 1]).style.top = selId.y + 2 + "px"
+			document.getElementById(add[add.length - 1]).style.left = selId.x + 3 + "px"
 				radiusVi.style.display = 'none'
 		 		radiusVi.style.top = selId.y + 2 + "px"
 		 		radiusVi.style.left = selId.x + 3 + "px"
 				bal -= 250
 				balance.innerText = `Баланс: ${bal}`
 			}else if (select.includes('ni') && bal >= 600) {
+				gans.innerHTML += `<img src="${select}" class="gan" id=${id}>`
+			add.push(id)
+			obj.butObj = le.id
+			obj.ganObj = id
+			obj.idObj = select
+			zan.push(obj)
+			id = String(Number(id) + 1)
+			document.getElementById(add[add.length - 1]).style.top = selId.y + 2 + "px"
+			document.getElementById(add[add.length - 1]).style.left = selId.x + 3 + "px"
 				radiusNi.style.display = 'none'
 		 		radiusNi.style.top = selId.y + 2 + "px"
 		 		radiusNi.style.left = selId.x + 3 + "px"
